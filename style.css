@@ -95,6 +95,17 @@ a:hover {
   border: none;
 }
 
+/* Ensure navigation links, including the logo anchor, never show an underline or border */
+.navbar a {
+  border: none;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  border: none;
+  text-decoration: none;
+}
+
 .navbar li a:hover {
   color: #555;
 }
