@@ -1,0 +1,206 @@
+/*
+ * Global styles for the Lucid Fit website.  
+ *
+ * This stylesheet embraces a clean, editorial aesthetic reminiscent of
+ * menswear magazines. Serif typography is used for headings to convey
+ * sophistication while a classic sans‑serif keeps body copy legible on
+ * all devices. Generous margins, subtle color palettes and flexible
+ * grids ensure the content breathes and scales gracefully.  
+ */
+
+/* Reset some basic elements */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  line-height: 1.6;
+  background-color: #fdfdfd;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* Typography */
+h1, h2, h3, h4 {
+  font-family: Georgia, 'Times New Roman', serif;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  margin-bottom: 0.6em;
+  color: #111;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+
+h2 {
+  font-size: 2rem;
+}
+
+h3 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-bottom: 1.2em;
+  font-size: 1rem;
+  max-width: 800px;
+}
+
+a {
+  color: #1a4f7a;
+  text-decoration: none;
+  border-bottom: 1px solid #1a4f7a;
+  transition: color 0.2s ease, border-color 0.2s ease;
+}
+
+a:hover {
+  color: #0e2d47;
+  border-color: #0e2d47;
+}
+
+/* Layout helpers */
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* Navigation */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.navbar img.logo {
+  height: 40px;
+  width: auto;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+  font-weight: 500;
+}
+
+.navbar li a {
+  color: #222;
+  border: none;
+}
+
+.navbar li a:hover {
+  color: #555;
+}
+
+/* Hero section */
+.hero {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  min-height: 60vh;
+  color: #fdfdfd;
+  overflow: hidden;
+}
+
+.hero.bg-dark {
+  background-color: #222;
+}
+
+.hero img.bg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.hero .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: -1;
+}
+
+.hero h1 {
+  font-size: 3rem;
+  color: #fff;
+  margin-bottom: 1rem;
+}
+
+.hero p.tagline {
+  font-size: 1.25rem;
+  font-style: italic;
+  color: #eee;
+}
+
+/* Section spacing */
+section {
+  padding: 3rem 0;
+}
+
+/* Drop list on Weekly page */
+.drop-list {
+  margin-top: 2rem;
+}
+
+.drop-list ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.drop-list li {
+  margin-bottom: 1rem;
+}
+
+.drop-list a {
+  font-size: 1.125rem;
+  font-weight: 600;
+}
+
+/* Drop page layout */
+.drop-section {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+  margin-bottom: 3rem;
+}
+
+.drop-section img {
+  flex: 0 0 350px;
+  width: 350px;
+  height: 450px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+.drop-section .content {
+  flex: 1 1 300px;
+}
+
+.drop-section .content h3 {
+  margin-top: 0;
+}
+
+/* Footer */
+footer {
+  background: #f5f5f5;
+  padding: 2rem 0;
+  text-align: center;
+  font-size: 0.875rem;
+  color: #777;
+}
